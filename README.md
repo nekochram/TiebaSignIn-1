@@ -78,4 +78,4 @@ SCKEY | xxxxxxxxxx
 
 + 去除多用户的支持
 
-+ 增加支持server酱推送，可以推送至微信2
++ 增加支持server酱推送，可以推送至微信1
