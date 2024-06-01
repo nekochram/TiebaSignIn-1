@@ -13,39 +13,39 @@
 
 # 功能
 
-+ 贴吧签到(最多支持 200 个)
+- 贴吧签到(最多支持 200 个)
 
-+ 支持推送运行结果至微信(通过 server 酱)
+- 支持推送运行结果至微信(通过 server 酱)
 
 # 使用方法
 
-## 1.fork本项目
+## 1.fork 本项目
 
-## 2.获取BDUSS
+## 2.获取 BDUSS
 
 在网页中登录上贴吧，然后按下`F12`打开调试模式，在`cookie`中找到`BDUSS`，并复制其`Value`值。
 
 ![](./assets/获取BDUSS.gif)
 
-## 3.将BDUSS添加到仓库的Secrets中
+## 3.将 BDUSS 添加到仓库的 Secrets 中
 
-Name | Value
--|-
-BDUSS | xxxxxxxxxxx
+| Name  | Value       |
+| ----- | ----------- |
+| BDUSS | xxxxxxxxxxx |
 
 将上一步骤获取到的`BDUSS`粘贴到`Secrets`中
 
 ![](./assets/添加BDUSS.gif)
 
-## 4.开启actions
+## 4.开启 actions
 
 默认`actions`是处于禁止的状态，需要手动开启。
 
 ![](./assets/开启actions.gif)
 
-## 5.第一次运行actions
+## 5.第一次运行 actions
 
-+ 自己提交一次`push`。
+- 自己提交一次`push`。
 
 将`run.txt`中的`flag`由`0`改为`1`
 
@@ -60,22 +60,22 @@ BDUSS | xxxxxxxxxxx
 
 每天早上`6:30`将会自动进行签到
 
-## 添加server酱推送
+## 添加 server 酱推送
 
-需在Secrets中添加[server酱](http://sc.ftqq.com/)的`SCKEY`，格式如下
+需在 Secrets 中添加[server 酱](http://sc.ftqq.com/)的`SCKEY`，格式如下
 
-Name | Value
--|-
-SCKEY | xxxxxxxxxx
+| Name  | Value      |
+| ----- | ---------- |
+| SCKEY | xxxxxxxxxx |
 
 ## 2020-11-01
 
-+ 代码重构
+- 代码重构
 
-+ 修改签到策略
+- 修改签到策略
 
 大大提高一次运行，贴吧签到的成功率，基本很少的贴吧会签到失败。
 
-+ 去除多用户的支持
+- 去除多用户的支持
 
-+ 增加支持server酱推送，可以推送至微2
+- 增加支持 server 酱推送，可以推送至微 3
