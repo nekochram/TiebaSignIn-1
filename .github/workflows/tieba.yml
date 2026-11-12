@@ -1,8 +1,10 @@
-# 每天6:30执行
+# 北京时间 06:30 执行。
+# GitHub 的 schedule 会被延迟或直接丢掉，每天由外部定时器调用 workflow_dispatch 触发。
 
 name: Start
 
 on:
+   workflow_dispatch:
    push:
    gollum:
    schedule:
